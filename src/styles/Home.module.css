@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: "Pacifico", cursive;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+
+.message {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.gif {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 40px; /* Prevents overlap */
+  flex-wrap: wrap; /* Ensures buttons stack on smaller screens */
+  justify-content: center;
+  width: 100%;
+}
+
+.buttonYes,
+.buttonNo {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  min-width: 150px; /* Ensures buttons don’t shrink too much */
+  text-align: center;
+}
+
+.buttonYes {
+  background-color: #ff4f7b;
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 79, 123, 0.5);
+}
+
+.buttonYes:hover {
+  background-color: #ff2e62;
+  transform: scale(1.1);
+}
+
+.buttonNo {
+  background-color: #444;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.buttonNo:hover {
+  background-color: #222;
+}
+
+/* 🔹 Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .message {
+    font-size: 1.2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px; /* More spacing for touch-friendly UI */
+  }
+
+  .buttonYes,
+  .buttonNo {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+  }
+
+  .gif {
+    width: 150px;
+  }
+}

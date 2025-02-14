@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Changed from height: 100vh for better scrolling */
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: "Pacifico", cursive;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.message {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.gif {
+  width: 200px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px; /* Optional: Slightly rounded corners for aesthetics */
+}
+
+.button {
+  margin-top: 20px;
+  padding: 14px 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  background-color: #ff4f7b;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 79, 123, 0.5);
+}
+
+.button:hover {
+  background-color: #ff2e62;
+  transform: scale(1.1);
+}
+
+/* 🔹 Responsive Design for Tablets and Mobile */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .message {
+    font-size: 1.3rem;
+  }
+
+  .gif {
+    width: 180px;
+  }
+
+  .button {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+
+  .gif {
+    width: 150px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
